@@ -1,18 +1,23 @@
 import React from 'react';
+import {Form,Button,Card} from 'react-bootstrap';
+import { useRef } from 'react';
 
 function UserLogin(){
+    const userEmail = useRef();
+    const passWord = useRef();
     return (
      <div>
-        <form>
+        <Form>
             <h3>Welcome!</h3>
-            <label>UserName:</label>
-            <input name="userName" type="text" placeholder="insert user name here"></input>
-            <br />
-            <label>Password:</label>
-            <input name="password" type = "text" placeholder = "insert password here"></input>
-            <br />
-            <input type="submit"></input>
-        </form>
+            <Form.Group id="userName">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" ref={userEmail}/>
+            </Form.Group>
+            <Form.Group id="passWord">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Enter " ref={passWord}/>
+            </Form.Group>
+        </Form>
      </div>    
     )};
 

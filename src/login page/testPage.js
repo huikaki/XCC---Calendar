@@ -1,12 +1,14 @@
 import React from 'react';
 import UserLogin from './loginFroms';
+import {Container} from 'react-bootstrap'
+import SignUp from './signUp';
 
 function TestPage(){
     return(
-        <div>
-        <h3>Login Page</h3>
-        <UserLogin />
-        </div>
-    )
+        <>
+      <UserLogin />
+      <SignUp />
+      </>
+    );
 }
 export default TestPage;

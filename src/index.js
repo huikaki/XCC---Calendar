@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TestPage from './login page/testPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-     <TestPage />
+     <TestPage / >
   </React.StrictMode>
 );
 
