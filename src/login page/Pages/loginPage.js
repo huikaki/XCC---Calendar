@@ -1,5 +1,5 @@
 import React from "react";
-import UserLogin from "./loginFroms";
+import UserLogin from "/LoginFroms";
 //
 function LoginPage(){
     

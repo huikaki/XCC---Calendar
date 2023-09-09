@@ -1,14 +1,16 @@
 import React from 'react';
-import UserLogin from './loginFroms';
+import UserLogin from './Components/LoginFroms';
 import {Container} from 'react-bootstrap'
-import SignUp from './signUp';
+import SignUp from './Components/SignUpFroms';
 
 function TestPage(){
     return(
-        <>
-      <UserLogin />
-      <SignUp />
-      </>
+        <Container class="d-flex align-items-center justify-content-center">
+        <div >
+        <UserLogin />
+        <SignUp />
+        </div>
+      </Container>
     );
 }
 export default TestPage;
