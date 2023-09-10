@@ -1,15 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import TestPage from './login page/testPage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import TestPage from "./login page/testPage";
+import DisplayCalendar from "./calendarWithPublicHoliday/displayCalendarPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-     <TestPage />
+    <DisplayCalendar />
+    <TestPage />
+    <App />
   </React.StrictMode>
 );
 
